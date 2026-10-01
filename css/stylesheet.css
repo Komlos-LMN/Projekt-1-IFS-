@@ -1,7 +1,29 @@
-h1{
-    align-content: center;
+*{
+    box-sizing: border-box;
+    
 }
-nav{
-    display: inline;
+
+h1{
+    text-align: center;
+    background-color: darkgray;
+}
+header{
+    color: gray;
+}
+nav ul{
     text-decoration: none;
+    text-align: center;
+}
+
+nav ul li{
+    display: inline;
+}
+
+a{ 
+    text-decoration: none;
+    color: rgb(87, 82, 82);
+}
+
+.container{
+    align-content: center;
 }
