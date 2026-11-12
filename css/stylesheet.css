@@ -20,14 +20,18 @@ body {
 .site-logo {
     font-family: 'Racing Sans One', sans-serif;
     margin: 0 auto 0 -8px;
-    font-size: 1.75rem;
+    position:fixed;
+    top:12px;
+    left:24px;
+    z-index:1100;
+    font-size:1.8rem;
+    color:#4fdfff;
 
 }
 
-.nav-link {
-    color: white;
-    margin-left: 20px;
-    transition: .3s;
+.nav-link{
+    font-weight:700;
+    letter-spacing:1px;
 }
 
 .nav-link:hover {
