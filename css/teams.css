@@ -1,0 +1,256 @@
+.teams-page .navbar {
+	border-bottom: 1px solid rgba(79, 223, 255, .22);
+	backdrop-filter: blur(12px);
+}
+
+.team-directory {
+	min-height: 100vh;
+	padding: 136px 0 80px;
+	background-color: #0d1214;
+	background-image:
+		linear-gradient(rgba(79, 223, 255, .035) 1px, transparent 1px),
+		linear-gradient(90deg, rgba(79, 223, 255, .035) 1px, transparent 1px),
+		linear-gradient(145deg, #0d1214, #14191a 58%, #101314);
+	background-size: 40px 40px, 40px 40px, auto;
+}
+
+.directory-kicker {
+	display: flex;
+	align-items: center;
+	gap: 10px;
+	margin-bottom: 18px;
+	color: #9eb4b9;
+	font-size: .75rem;
+	font-weight: 700;
+}
+
+.directory-kicker span {
+	width: 8px;
+	height: 8px;
+	background: #ff6a00;
+	box-shadow: 0 0 12px rgba(255, 106, 0, .7);
+}
+
+.directory-title-row {
+	display: flex;
+	align-items: flex-end;
+	justify-content: space-between;
+	gap: 24px;
+	margin-bottom: 42px;
+}
+
+.directory-title-row h1 {
+	margin: 0;
+	font-family: 'Racing Sans One', sans-serif;
+	font-size: 4.5rem;
+	line-height: 1;
+}
+
+.directory-title-row h1 span {
+	color: #4fdfff;
+}
+
+.directory-count {
+	margin: 0 0 6px;
+	color: #a4b2b5;
+	font-size: .75rem;
+	font-weight: 700;
+}
+
+.directory-count strong {
+	margin-right: 8px;
+	color: #ff6a00;
+	font-family: 'Racing Sans One', sans-serif;
+	font-size: 1.5rem;
+}
+
+.team-list-frame {
+	border-top: 1px solid rgba(79, 223, 255, .5);
+	border-bottom: 1px solid rgba(79, 223, 255, .2);
+	background: rgba(8, 12, 14, .72);
+}
+
+.team-table {
+	width: 100%;
+	border-collapse: collapse;
+	table-layout: fixed;
+}
+
+.team-table th {
+	padding: 18px 20px;
+	border-bottom: 1px solid rgba(79, 223, 255, .2);
+	color: #4fdfff;
+	font-size: .72rem;
+	font-weight: 700;
+	text-align: left;
+}
+
+.team-table th:first-child {
+	width: 100px;
+}
+
+.team-table th:last-child {
+	width: 190px;
+}
+
+.team-table .country-row th {
+	padding: 18px 20px;
+	border-top: 1px solid rgba(79, 223, 255, .24);
+	background: rgba(79, 223, 255, .055);
+	color: #fff;
+	font-size: .95rem;
+}
+
+.country-flag {
+	margin-right: 12px;
+	font-size: 1.15rem;
+}
+
+.country-count {
+	float: right;
+	color: #8da1a5;
+	font-size: .68rem;
+}
+
+.team-table .team-row td {
+	padding: 14px 20px;
+	border-bottom: 1px solid rgba(255, 255, 255, .07);
+	color: #bac5c7;
+}
+
+.team-table .team-row:hover td {
+	background: rgba(79, 223, 255, .045);
+}
+
+.team-number {
+	color: #4fdfff !important;
+	font-variant-numeric: tabular-nums;
+}
+
+.team-name {
+	font-weight: 700;
+}
+
+.featured-team td {
+	background: rgba(79, 223, 255, .09);
+	border-bottom-color: rgba(79, 223, 255, .28) !important;
+}
+
+.featured-team .team-name {
+	color: #4fdfff !important;
+}
+
+.team-badge {
+	display: inline-block;
+	margin-left: 10px;
+	padding: 3px 7px;
+	border: 1px solid rgba(79, 223, 255, .45);
+	color: #4fdfff;
+	font-size: .62rem;
+	font-weight: 700;
+	vertical-align: middle;
+}
+
+.team-status-cell {
+	text-align: right;
+}
+
+.team-status {
+	display: inline-block;
+	padding: 4px 8px;
+	border: 1px solid rgba(255, 106, 0, .45);
+	color: #ff9a54;
+	font-size: .65rem;
+	font-weight: 700;
+	text-transform: uppercase;
+}
+
+.team-note {
+	display: block;
+	margin-top: 5px;
+	color: #8da1a5;
+	font-size: .65rem;
+}
+
+.directory-footer {
+	display: flex;
+	justify-content: space-between;
+	gap: 16px 24px;
+	flex-wrap: wrap;
+	padding: 20px 4px 0;
+}
+
+.directory-signoff,
+.directory-source {
+	margin: 0;
+	color: #9eb4b9;
+	font-size: .78rem;
+}
+
+.directory-signoff {
+	font-weight: 700;
+}
+
+.directory-source a {
+	color: #4fdfff;
+	text-decoration: underline;
+	text-underline-offset: 3px;
+}
+
+.directory-source a:hover {
+	color: #fff;
+}
+
+@media (max-width: 600px) {
+	.team-directory {
+		padding-top: 120px;
+	}
+
+	.directory-title-row {
+		align-items: flex-start;
+		flex-direction: column;
+		gap: 10px;
+		margin-bottom: 30px;
+	}
+
+	.directory-title-row h1 {
+		font-size: 3rem;
+	}
+
+	.team-table th,
+	.team-table td {
+		padding-right: 10px;
+		padding-left: 10px;
+	}
+
+	.team-table th:first-child {
+		width: 58px;
+	}
+
+	.team-table th:last-child {
+		width: 112px;
+	}
+
+	.team-table .country-row th {
+		padding-top: 15px;
+		padding-bottom: 15px;
+	}
+
+	.team-table .team-row td {
+		padding-top: 12px;
+		padding-bottom: 12px;
+	}
+
+	.team-status {
+		padding: 3px 5px;
+		font-size: .58rem;
+	}
+
+	.team-note {
+		font-size: .58rem;
+	}
+
+	.team-badge {
+		margin: 6px 0 0;
+	}
+}
