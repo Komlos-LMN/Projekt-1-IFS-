@@ -1,106 +1,97 @@
-*{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-    font-family:Montserrat,sans-serif;
-    background:#111;
-    color:white;
+body {
+    font-family: Montserrat, sans-serif;
+    background: #111;
+    color: white;
 }
 
-.navbar{
-    background:rgba(0,0,0,.6);
-    backdrop-filter:blur(1px);
+
+
+.navbar {
+    background: rgba(0, 0, 0, .6);
+    backdrop-filter: blur(1px);
 }
 
-.site-logo{
-    margin:0 auto 0 -8px;
-    font-size:1.75rem;
-}
-
-.nav-link{
-    color:white;
-    margin-left:20px;
-    transition:.3s;
-}
-
-.nav-link:hover{
-    color:#4fdfff !important;
-}
-
-.hero{
-
-    height:100vh;
-
-    position:relative;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
+.site-logo {
+    font-family: 'Racing Sans One', sans-serif;
+    margin: 0 auto 0 -8px;
+    font-size: 1.75rem;
 
 }
 
-.hero-video{
-    position:absolute;
-    inset:0;
-    width:100%;
-    height:100%;
-    object-fit:cover;
-    z-index:0;
+.nav-link {
+    color: white;
+    margin-left: 20px;
+    transition: .3s;
 }
 
-.overlay{
-
-    position:absolute;
-
-    inset:0;
-    width:100%;
-    height:100%;
-
-    background:rgba(0,0,0,.55);
-    z-index:1;
+.nav-link:hover {
+    color: #4fdfff !important;
 }
 
-.hero-content{
+.hero {
 
-    position:relative;
-    z-index:2;
+    height: 100vh;
+
+    position: relative;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
 
 }
 
-.hero h1{
+.hero-video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 0;
+}
 
-    font-family:'Bebas Neue';
+.overlay {
 
-    font-size:7rem;
+    position: absolute;
 
-    color:#4fdfff;
+    inset: 0;
+    width: 100%;
+    height: 100%;
 
-    text-shadow:0 0 15px #00d9ff;
+    background: rgba(0, 0, 0, .55);
+    z-index: 1;
+}
+
+.hero-content {
+
+    position: relative;
+    z-index: 2;
 
 }
 
-.hero h2{
 
-    font-family:'Bebas Neue';
+.hero h1 {
+    font-size: clamp(4rem, 11vw, 8rem);
+    line-height: .95;
+    letter-spacing: 2px;
+    text-shadow: 0 0 15px #00d9ff, 4px 4px 0 #004a5c;
+    }
 
-    font-size:4rem;
 
-    letter-spacing:8px;
-    
-    color: #ff6a00;
+ .hero h2 {
+        font-size: clamp(1.8rem, 5vw, 4rem);
+        letter-spacing: 12px;
+        text-shadow: 0 0 10px #ff6a00, 3px 3px 0 #5c2400;
+    }
 
-    text-shadow:0 0 10px #ff6a00;
-}
-
-.hero p{
-
-    margin:25px 0;
-
-    font-size:1.3rem;
-
+  .hero p{
+    font-weight:700;
+    letter-spacing:1px;
 }
